@@ -1,8 +1,16 @@
+import 'package:counter_app/viewModels/counter_viewmodel.dart';
+import 'package:counter_app/views/counter_page.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp( 
+    MyApp()
+  );
 }
+
+
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -16,7 +24,7 @@ class MyApp extends StatelessWidget {
 
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Counter App'),
+      home:CounterPage(),
     );
   }
 }
