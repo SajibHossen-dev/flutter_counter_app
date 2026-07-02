@@ -5,7 +5,10 @@ import 'package:provider/provider.dart';
 
 void main() {
   runApp( 
-    MyApp()
+    ChangeNotifierProvider(
+      create: (_) => CounterViewmodel(),
+      child : const MyApp(),
+    )
   );
 }
 
